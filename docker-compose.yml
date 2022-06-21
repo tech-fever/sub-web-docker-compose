@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  web:
+    image: techfever/sub-web:latest
+    ports:
+      - 127.0.0.1:58080:80
+    restart: always
+
+  sub:
+    image: tindy2013/subconverter:latest
+    ports:
+      - 127.0.0.1:25500:25500
+    restart: always
